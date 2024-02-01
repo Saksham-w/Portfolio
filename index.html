@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" defer src="/main.js"></script>
+  </head>
+  <body class="text-white bg-gradient-to-r from-black via-gray-800 to-black">
+    <div id="main">
+      <!-- Socials Icons  -->
+      <div
+        id="socialIcons"
+        class="hidden lg:flex flex-col items-center justify-center fixed top-[40%] left-0 bg-transparent text-right"
+      >
+        <a href="https://www.linkedin.com/in/saksham-codes/" target="_blank"
+          ><div
+            class="h-10 w-40 px-4 pt-1 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280] rounded-tr-lg"
+          >
+            LinkedIn
+            <span class="ml-4 h-full"
+              ><i class="ri-linkedin-box-fill text-2xl"></i
+            ></span></div
+        ></a>
+        <a href="https://github.com/Saksham-w" target="_blank"
+          ><div
+            class="h-10 w-40 px-4 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280]"
+          >
+            Github
+            <span class="ml-4 h-full"
+              ><i class="ri-github-fill text-2xl"></i
+            ></span></div
+        ></a>
+        <a href="mailto:sakshamshrestha400@gmail.com" target="_blank"
+          ><div
+            class="h-10 w-40 px-4 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280]"
+          >
+            Email
+            <span class="ml-4 h-full"
+              ><i class="ri-mail-fill text-[22px]"></i
+            ></span></div
+        ></a>
+        <a href="https://twitter.com/fcbxssk" target="_blank"
+          ><div
+            class="h-10 w-40 px-4 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280] rounded-br-lg"
+          >
+            Twitter
+            <span class="ml-4 h-full"
+              ><i class="ri-twitter-x-fill text-xl"></i
+            ></span></div
+        ></a>
+      </div>
+      <!-- Page 1  -->
+      <!-- bg-gradient-to-b from-black via-black to-gray-800 -->
+      <div id="home" class="flex flex-col h-screen w-full">
+        <!-- mobile navbar  -->
+        <nav class="w-full flex lg:hidden items-center justify-between px-5">
+          <div>
+            <h1
+              class="mx-5 text-4xl font-bold font-logo tracking-wider"
+              id="logo"
+            >
+              Saksham
+            </h1>
+          </div>
+          <div class="h-full flex items-center justify-center">
+            <i class="ri-menu-line"></i>
+          </div>
+        </nav>
+        <!-- computer navbar  -->
+        <nav
+          class="hidden w-full h-24 lg:flex items-center justify-between px-20 shadow-md"
+        >
+          <h1
+            class="mx-5 text-4xl font-bold font-logo tracking-wider"
+            id="logo"
+          >
+            Saksham
+          </h1>
+          <ul class="flex items-center justify-center">
+            <a href="#home">
+              <li
+                class="mx-5 text-lg cursor-pointer hover:text-mycolor duration-100"
+              >
+                Home
+              </li></a
+            >
+            <a href="#about"
+              ><li
+                class="mx-5 text-lg cursor-pointer hover:text-mycolor duration-100"
+              >
+                About
+              </li></a
+            >
+            <a href="#projects"
+              ><li
+                class="mx-5 text-lg cursor-pointer hover:text-mycolor duration-100"
+              >
+                Project
+              </li></a
+            >
+            <a href="#skills">
+              <li
+                class="mx-5 text-lg cursor-pointer hover:text-mycolor duration-100"
+              >
+                Skills
+              </li></a
+            >
+            <a href="#contact">
+              <li
+                class="mx-5 text-lg cursor-pointer hover:text-mycolor duration-100"
+              >
+                Contacts
+              </li></a
+            >
+          </ul>
+        </nav>
+        <div id="hero" class="max-w-[1240px] mx-auto h-[calc(100vh-96px)] flex flex-col lg:flex-row">
+          <div id="photo" class="h-full w-1/2 flex items-center justify-center">
+            <img src="/PP2.jpeg" alt="error" class="h-96 w-96 rounded-full" />
+          </div>
+          <div
+            id="info"
+            class="h-full w-1/2 flex flex-col items-start justify-center"
+          >
+            <h1
+              class="text-6xl font-bold bg-gradient-to-br from-[#cab631] to-[#fadd05] bg-clip-text text-transparent"
+            >
+              Saksham Shrestha
+            </h1>
+            <p class="my-5 text-xl text-mutedtext">
+              Hey there! I am Computer science student and web dev enthusiast. I
+              craft eye-catching, user-friendly websites that set you apart.
+              Ready to elevate your online game together?
+            </p>
+            <a href="#contact"
+              ><button
+                class="bg-mycolor p-5 w-40 h-12 rounded-md text-black flex justify-center items-center text-lg font-semibold hover:border-2 border-mycolor hover:bg-transparent hover:text-mycolor duration-150"
+              >
+                Reach Out
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Page 2  -->
+      <!-- bg-gradient-to-b from-gray-800 via-black to-black -->
+      <div
+        id="about"
+        class="flex flex-col items-center justify-center h-screen max-w-[1240px] mx-auto"
+      >
+        <h1
+          class="w-full flex justify-center items-center text-5xl font-bold my-3"
+        >
+          About
+        </h1>
+        <p class="text-xl text-mutedtext mt-3">
+          Hello! I'm Saksham Shrestha, a third-year Computer Science student
+          with a fervent passion for frontend web development. My expertise lies
+          in crafting dynamic and responsive web applications using JavaScript
+          technologies like React and Next.js. My approach combines innovative
+          design with functional simplicity, aiming to create user-friendly and
+          aesthetically pleasing web experiences.
+        </p>
+        <p class="text-xl text-mutedtext mt-3">
+          While my primary focus is on frontend development, I am actively
+          expanding my skill set into backend territories, particularly with
+          Node.js. This endeavor is part of my commitment to becoming a
+          versatile developer capable of handling full-stack projects. Balancing
+          my academic pursuits with practical application, I am eager to
+          collaborate on projects that challenge and enhance my skills in both
+          frontend and backend development.
+        </p>
+      </div>
+      <!-- Page 3  -->
+      <div
+        id="projects"
+        class="flex flex-col items-center justify-center max-w-[1240px] mx-auto min-h-screen"
+      >
+        <h1
+          class="w-full flex justify-center items-center text-5xl font-bold my-3"
+        >
+          Projects
+        </h1>
+        <p class="mt-8 mb-12 text-lg text-mutedtext">
+          These are some of the projects that I have built over the years that
+          reflect my passion in software and design.
+        </p>
+        <div id="allProjects" class="flex flex-col items-center justify-center">
+          <!-- Catfacts  -->
+          <div class="flex justify-center items-center w-full my-7">
+            <div class="mr-36 w-1/2">
+              <a href="https://randomcatsfacts.vercel.app/" target="_blank">
+                <img
+                  src="/projects/catfacts.png"
+                  alt=""
+                  class="w-[450px] rounded-2xl hover:scale-110 duration-300"
+              /></a>
+            </div>
+            <div class="flex flex-col justify-center items-start w-1/2">
+              <h1 class="text-4xl py-2 font-bold">Catfacts</h1>
+              <p class="text-lg text-mutedtext">Cats fact generating website</p>
+              <div class="flex flex-row my-4">
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  HTML
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  CSS
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  JavaScript
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  API
+                </div>
+              </div>
+              <div>
+                <a href="https://randomcatsfacts.vercel.app" target="_blank"
+                  ><button
+                    class="w-40 rounded-lg p-3 my-2 border-2 text-black font-bold bg-mycolor border-mycolor hover:text-mycolor hover:bg-transparent duration-150"
+                  >
+                    Visit Live
+                  </button></a
+                >
+                <a href="https://github.com/Saksham-w/CatFacts" target="_blank"
+                  ><button
+                    class="w-40 rounded-lg p-3 my-2 border-2 text-mycolor font-bold bg-transparent border-mycolor hover:text-black hover:bg-mycolor duration-150"
+                  >
+                    View Code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Gitub Clone  -->
+          <div class="flex justify-center items-center w-full my-7">
+            <div class="mr-36 w-1/2">
+              <a href="https://bestgithubclone.vercel.app/" target="_blank"
+                ><img
+                  src="/projects/githubclone.png"
+                  alt=""
+                  class="w-[450px] rounded-2xl hover:scale-110 duration-300"
+              /></a>
+            </div>
+            <div class="flex flex-col justify-center items-start w-1/2">
+              <h1 class="text-4xl py-2 font-bold">Github Clone</h1>
+              <p class="text-lg text-mutedtext">
+                Simple clone of Github using API
+              </p>
+              <div class="flex flex-row my-4">
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  HTML
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  CSS
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  JavaScript
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  Github API
+                </div>
+              </div>
+              <div>
+                <a href="https://bestgithubclone.vercel.app/" target="_blank"
+                  ><button
+                    class="w-40 rounded-lg p-3 my-2 border-2 text-black font-bold bg-mycolor border-mycolor hover:text-mycolor hover:bg-transparent duration-150"
+                  >
+                    Visit Live
+                  </button></a
+                >
+                <a
+                  href="https://github.com/Saksham-w/Github-clone"
+                  target="_blank"
+                  ><button
+                    class="w-40 rounded-lg p-3 my-2 border-2 text-mycolor font-bold bg-transparent border-mycolor hover:text-black hover:bg-mycolor duration-150"
+                  >
+                    View Code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tech threads  -->
+          <div class="flex justify-center items-center w-full my-7">
+            <div class="mr-36 w-1/2">
+              <a href="https://techthreads.vercel.app/" target="_blank"
+                ><img
+                  src="/projects/techthreads.png"
+                  alt=""
+                  class="w-[450px] rounded-2xl hover:scale-110 duration-300"
+              /></a>
+            </div>
+            <div class="flex flex-col justify-center items-start w-1/2">
+              <h1 class="text-4xl py-2 font-bold">Tech Threads</h1>
+              <p class="text-lg text-mutedtext">
+                Tech news generating website using API
+              </p>
+              <div class="flex flex-row my-4">
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  HTML
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  CSS
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  JavaScript
+                </div>
+                <div
+                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
+                >
+                  HackerNews API
+                </div>
+              </div>
+              <div>
+                <a href="https://techthreads.vercel.app/" target="_blank">
+                  <button
+                    class="w-40 rounded-lg p-3 my-2 border-2 text-black font-bold bg-mycolor border-mycolor hover:text-mycolor hover:bg-transparent duration-150"
+                  >
+                    Visit Live
+                  </button></a
+                >
+                <a
+                  href="https://github.com/Saksham-w/Tech-Threads"
+                  target="_blank"
+                  ><button
+                    class="w-40 rounded-lg p-3 my-2 border-2 text-mycolor font-bold bg-transparent border-mycolor hover:text-black hover:bg-mycolor duration-150"
+                  >
+                    View Code
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page4  -->
+      <div
+        id="skills"
+        class="min-h-screen max-w-[1240px] mx-auto flex flex-col items-center justify-center"
+      >
+        <h1
+          class="w-full flex justify-center items-center text-5xl font-bold my-3"
+        >
+          Skills
+        </h1>
+        <p class="mt-8 mb-12 text-lg text-mutedtext">
+          Below are some tools/technologies that I use very often.
+        </p>
+        <div id="allSkills" class="flex flex-wrap items-center justify-center">
+          <div
+            title="HTML"
+            class="p-5 bg-black shadow-lg shadow-rose-400 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/1.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="CSS"
+            class="p-5 bg-black shadow-lg shadow-blue-400 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/2.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="Javascript"
+            class="p-5 bg-black shadow-lg shadow-yellow-400 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/3.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="Tailwind CSS"
+            class="p-5 bg-black shadow-lg shadow-cyan-300 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/4.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="Vite"
+            class="p-5 bg-black shadow-lg shadow-violet-500 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/5.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="React.js"
+            class="p-5 bg-black shadow-lg shadow-sky-500 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/6.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="Git"
+            class="p-5 bg-black shadow-lg shadow-red-400 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/7.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="Github"
+            class="p-5 bg-black shadow-lg shadow-white m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/8.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="Typescript"
+            class="p-5 bg-black shadow-lg shadow-blue-500 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/9.png" alt="" class="h-20 w-20" />
+          </div>
+          <div
+            title="VS-Code"
+            class="p-5 bg-black shadow-lg shadow-sky-500 m-5 rounded-full h-32 w-32 flex items-center justify-center hover:scale-105 transition duration-150 cursor-pointer"
+          >
+            <img src="/skills/10.png" alt="" class="h-20 w-20" />
+          </div>
+        </div>
+      </div>
+      <!-- Footer  -->
+      <footer
+        id="contact"
+        class="max-w-[1240px] mx-auto min-h-[50vh] flex justify-center items-center"
+      >
+        <div
+          id="footInfo"
+          class="h-full w-1/2 flex flex-col items-start justify-start"
+        >
+          <h1 class="text-4xl font-bold">Hey there!</h1>
+          <p class="text-xl my-3 text-mutedtext">
+            Like what you see? Let's make magic happen!
+          </p>
+          <p class="text-lg text-mutedtext">
+            Whether it's a new project you want to collaborate on, a job
+            opportunity, or just a friendly hello, I'm all ears. I'm always on
+            the hunt for ways to push boundaries and create something
+            extraordinary. So don't be shy, let's connect and see what we can
+            accomplish together. Have an amazing day!
+          </p>
+          <a
+            href="./public/resume.pdf"
+            download
+            class="text-mycolor text-lg my-3 hover:underline"
+            >Download my CV</a
+          >
+          <div
+            id="icons"
+            class="flex flex-row justify-center items-center text-gray-900"
+          >
+            <a
+              href="https://www.linkedin.com/in/saksham-codes/"
+              target="_blank"
+              class="text-2xl bg-gray-500 p-3 mr-4 rounded-full hover:text-yellow-400 duration-300 h-10 w-10 flex items-center justify-center"
+              ><i class="ri-linkedin-box-fill"></i
+            ></a>
+            <a
+              href="https://github.com/Saksham-w"
+              target="_blank"
+              class="text-2xl bg-gray-500 p-3 mx-4 rounded-full hover:text-yellow-400 duration-300 h-10 w-10 flex items-center justify-center"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a
+              href="mailto:sakshamshrestha400@gmail.com"
+              target="_blank"
+              class="text-[22px] bg-gray-500 p-3 mx-4 rounded-full hover:text-yellow-400 duration-300 h-10 w-10 flex items-center justify-center"
+              ><i class="ri-mail-fill"></i
+            ></a>
+            <a
+              href="https://twitter.com/fcbxssk"
+              target="_blank"
+              class="text-xl bg-gray-500 p-3 mx-4 rounded-full hover:text-yellow-400 duration-300 h-10 w-10 flex items-center justify-center"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          id="form"
+          class="h-full w-1/2 flex flex-col items-center justify-center px-20"
+        >
+          <h1 class="w-full text-4xl font-bold">Lets Connect</h1>
+          <form
+            action="https://getform.io/f/eede88e8-a0db-4fa3-90d7-00ecb59962c8"
+            method="post"
+            class="flex flex-col justify-center items-center w-full text-black"
+          >
+            <input
+              class="border w-full p-2 my-1 rounded-md"
+              type="text"
+              placeholder="Enter your name"
+            />
+            <input
+              class="border w-full p-2 my-1 rounded-md"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <textarea
+              class="border w-full p-2 my-1 rounded-md"
+              name="message"
+              placeholder="Enter your message"
+              id=""
+              cols="10"
+              rows="5"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-mycolor p-5 w-32 h-10 my-2 rounded-md text-black flex justify-center items-center"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </footer>
+      <div class="w-full h-12 flex items-center justify-center border-t">
+        All Rights Reserved © Saksham Shrestha
+      </div>
+    </div>
+  </body>
+</html>
