@@ -8,73 +8,117 @@
     <link rel="stylesheet" href="./style.css" />
     <script type="module" defer src="/main.js"></script>
   </head>
-  <body class="text-white bg-gradient-to-r from-black via-gray-800 to-black">
+  <body class="text-white px-2 lg:px-0 bg-gradient-to-r from-black via-gray-800 to-black">
     <div id="main">
       <!-- Socials Icons  -->
       <div
         id="socialIcons"
         class="hidden lg:flex flex-col items-center justify-center fixed top-[40%] left-0 bg-transparent text-right"
       >
-        <a href="https://www.linkedin.com/in/saksham-codes/" target="_blank"
-          ><div
-            class="h-10 w-40 px-4 pt-1 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280] rounded-tr-lg"
-          >
-            LinkedIn
-            <span class="ml-4 h-full"
-              ><i class="ri-linkedin-box-fill text-2xl"></i
-            ></span></div
-        ></a>
-        <a href="https://github.com/Saksham-w" target="_blank"
-          ><div
-            class="h-10 w-40 px-4 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280]"
-          >
-            Github
-            <span class="ml-4 h-full"
-              ><i class="ri-github-fill text-2xl"></i
-            ></span></div
-        ></a>
-        <a href="mailto:sakshamshrestha400@gmail.com" target="_blank"
-          ><div
-            class="h-10 w-40 px-4 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280]"
-          >
-            Email
-            <span class="ml-4 h-full"
-              ><i class="ri-mail-fill text-[22px]"></i
-            ></span></div
-        ></a>
-        <a href="https://twitter.com/fcbxssk" target="_blank"
-          ><div
-            class="h-10 w-40 px-4 ml-[-110px] hover:ml-[-30px] duration-300 hover:rounded-xl bg-[#6b7280] rounded-br-lg"
-          >
-            Twitter
-            <span class="ml-4 h-full"
-              ><i class="ri-twitter-x-fill text-xl"></i
-            ></span></div
-        ></a>
+        <ul>
+          <a href="https://www.linkedin.com/in/saksham-codes/" target="_blank"
+            ><li
+              class="flex items-center justify-between h-10 w-40 px-4 pt-1 ml-[-110px] hover:ml-[-10px] duration-300 hover:rounded-xl bg-[#6b7280] rounded-tr-lg"
+            >
+              LinkedIn
+              <span class="h-full"
+                ><i class="ri-linkedin-box-fill text-2xl"></i
+              ></span></li
+          ></a>
+          <a href="https://github.com/Saksham-w" target="_blank"
+            ><li
+              class="flex items-center justify-between h-10 w-40 px-4 ml-[-110px] hover:ml-[-10px] duration-300 hover:rounded-xl bg-[#6b7280]"
+            >
+              Github
+              <span class="h-full"
+                ><i class="ri-github-fill text-2xl"></i
+              ></span></li
+          ></a>
+          <a href="mailto:sakshamshrestha400@gmail.com" target="_blank"
+            ><li
+              class="flex items-center justify-between h-10 w-40 px-4 ml-[-110px] hover:ml-[-10px] duration-300 hover:rounded-xl bg-[#6b7280]"
+            >
+              Email
+              <span class="h-full"
+                ><i class="ri-mail-fill text-[22px]"></i
+              ></span></li
+          ></a>
+          <a href="https://twitter.com/fcbxssk" target="_blank"
+            ><li
+              class=" flex items-center justify-between h-10 w-40 px-4 ml-[-110px] hover:ml-[-10px] duration-300 hover:rounded-xl bg-[#6b7280] rounded-br-lg"
+            >
+              Twitter
+              <span class="h-full"
+                ><i class="ri-twitter-x-fill text-xl"></i
+              ></span></li
+          ></a>
+        </ul>
       </div>
-      <!-- Page 1  -->
+     <!-- Page 1  -->
       <!-- bg-gradient-to-b from-black via-black to-gray-800 -->
-      <div id="home" class="flex flex-col h-screen w-full">
+      <div id="home" class="flex flex-col min-h-screen w-full">
         <!-- mobile navbar  -->
-        <nav class="w-full flex lg:hidden items-center justify-between px-5">
+        <nav
+          class="w-full h-24 flex lg:hidden items-center justify-between px-5"
+        >
           <div>
             <h1
-              class="mx-5 text-4xl font-bold font-logo tracking-wider"
+              class="mx-5 text-2xl lg:text-4xl font-bold font-logo tracking-wider"
               id="logo"
             >
               Saksham
             </h1>
           </div>
-          <div class="h-full flex items-center justify-center">
+          <div class="hamburgerbtn h-full flex items-center justify-center z-20">
             <i class="ri-menu-line"></i>
           </div>
+          <div class="hamburgermenu hidden h-screen absolute top-0 left-0 w-full bg-black z-10">
+            <ul class="w-full h-full flex flex-col items-center justify-center">
+              <a href="#home">
+                <li
+                  class="my-5 text-lg duration-100"
+                >
+                  Home
+                </li></a
+              >
+              <a href="#about"
+                ><li
+                  class="my-5 text-lg duration-100"
+                >
+                  About
+                </li></a
+              >
+              <a href="#projects"
+                ><li
+                  class="my-5 text-lg duration-100"
+                >
+                  Project
+                </li></a
+              >
+              <a href="#skills">
+                <li
+                  class="my-5 text-lg duration-100"
+                >
+                  Skills
+                </li></a
+              >
+              <a href="#contact">
+                <li
+                  class="my-5 text-lg duration-100"
+                >
+                  Contacts
+                </li></a
+              >
+            </ul>
+          </div>
         </nav>
+        
         <!-- computer navbar  -->
         <nav
           class="hidden w-full h-24 lg:flex items-center justify-between px-20 shadow-md"
         >
           <h1
-            class="mx-5 text-4xl font-bold font-logo tracking-wider"
+            class="mx-5 text-2xl lg:text-4xl font-bold font-logo tracking-wider"
             id="logo"
           >
             Saksham
@@ -117,27 +161,39 @@
             >
           </ul>
         </nav>
-        <div id="hero" class="max-w-[1240px] mx-auto h-[calc(100vh-96px)] flex flex-col lg:flex-row">
-          <div id="photo" class="h-full w-1/2 flex items-center justify-center">
-            <img src="/PP2.jpeg" alt="error" class="h-96 w-96 rounded-full" />
+        <div
+          id="hero"
+          class="max-w-[1240px] mx-auto h-[calc(100vh-96px)] flex flex-col lg:flex-row"
+        >
+          <div
+            id="photo"
+            class="h-full w-full lg:w-1/2 flex items-center justify-center"
+          >
+            <img
+              src="/PP2.jpeg"
+              alt="error"
+              class="h-52 w-52 lg:h-96 lg:w-96 rounded-full"
+            />
           </div>
           <div
             id="info"
-            class="h-full w-1/2 flex flex-col items-start justify-center"
+            class="h-full w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center"
           >
             <h1
-              class="text-6xl font-bold bg-gradient-to-br from-[#cab631] to-[#fadd05] bg-clip-text text-transparent"
+              class="text-4xl lg:text-6xl font-bold bg-gradient-to-br from-[#cab631] to-[#fadd05] bg-clip-text text-transparent"
             >
               Saksham Shrestha
             </h1>
-            <p class="my-5 text-xl text-mutedtext">
+            <p
+              class="my-5 text-lg lg:text-xl text-center lg:text-left text-mutedtext"
+            >
               Hey there! I am Computer science student and web dev enthusiast. I
               craft eye-catching, user-friendly websites that set you apart.
               Ready to elevate your online game together?
             </p>
             <a href="#contact"
               ><button
-                class="bg-mycolor p-5 w-40 h-12 rounded-md text-black flex justify-center items-center text-lg font-semibold hover:border-2 border-mycolor hover:bg-transparent hover:text-mycolor duration-150"
+                class="bg-mycolor p-5 w-40 h-12 rounded-md text-black flex justify-center items-center text-base lg:text-lg font-semibold hover:border-2 border-mycolor hover:bg-transparent hover:text-mycolor duration-150"
               >
                 Reach Out
               </button></a
@@ -149,14 +205,16 @@
       <!-- bg-gradient-to-b from-gray-800 via-black to-black -->
       <div
         id="about"
-        class="flex flex-col items-center justify-center h-screen max-w-[1240px] mx-auto"
+        class="flex flex-col items-center justify-center min-h-screen max-w-[1240px] mx-auto"
       >
         <h1
-          class="w-full flex justify-center items-center text-5xl font-bold my-3"
+          class="w-full flex justify-center items-center text-3xl lg:text-5xl font-bold my-3"
         >
           About
         </h1>
-        <p class="text-xl text-mutedtext mt-3">
+        <p
+          class="text-lg lg:text-xl text-center lg:text-left text-mutedtext mt-3"
+        >
           Hello! I'm Saksham Shrestha, a third-year Computer Science student
           with a fervent passion for frontend web development. My expertise lies
           in crafting dynamic and responsive web applications using JavaScript
@@ -164,7 +222,9 @@
           design with functional simplicity, aiming to create user-friendly and
           aesthetically pleasing web experiences.
         </p>
-        <p class="text-xl text-mutedtext mt-3">
+        <p
+          class="text-lg lg:text-xl text-center lg:text-left text-mutedtext mt-3"
+        >
           While my primary focus is on frontend development, I am actively
           expanding my skill set into backend territories, particularly with
           Node.js. This endeavor is part of my commitment to becoming a
@@ -177,186 +237,20 @@
       <!-- Page 3  -->
       <div
         id="projects"
-        class="flex flex-col items-center justify-center max-w-[1240px] mx-auto min-h-screen"
+        class="flex flex-col items-center justify-center max-w-[1240px] mx-auto min-h-screen "
       >
         <h1
-          class="w-full flex justify-center items-center text-5xl font-bold my-3"
+          class="w-full flex justify-center items-center text-3xl lg:text-5xl font-bold my-3"
         >
           Projects
         </h1>
-        <p class="mt-8 mb-12 text-lg text-mutedtext">
+        <p class="mt-8 mb-12 text-base text-center lg:text-lg  text-mutedtext">
           These are some of the projects that I have built over the years that
           reflect my passion in software and design.
         </p>
         <div id="allProjects" class="flex flex-col items-center justify-center">
           <!-- Catfacts  -->
-          <div class="flex justify-center items-center w-full my-7">
-            <div class="mr-36 w-1/2">
-              <a href="https://randomcatsfacts.vercel.app/" target="_blank">
-                <img
-                  src="/projects/catfacts.png"
-                  alt=""
-                  class="w-[450px] rounded-2xl hover:scale-110 duration-300"
-              /></a>
-            </div>
-            <div class="flex flex-col justify-center items-start w-1/2">
-              <h1 class="text-4xl py-2 font-bold">Catfacts</h1>
-              <p class="text-lg text-mutedtext">Cats fact generating website</p>
-              <div class="flex flex-row my-4">
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  HTML
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  CSS
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  JavaScript
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  API
-                </div>
-              </div>
-              <div>
-                <a href="https://randomcatsfacts.vercel.app" target="_blank"
-                  ><button
-                    class="w-40 rounded-lg p-3 my-2 border-2 text-black font-bold bg-mycolor border-mycolor hover:text-mycolor hover:bg-transparent duration-150"
-                  >
-                    Visit Live
-                  </button></a
-                >
-                <a href="https://github.com/Saksham-w/CatFacts" target="_blank"
-                  ><button
-                    class="w-40 rounded-lg p-3 my-2 border-2 text-mycolor font-bold bg-transparent border-mycolor hover:text-black hover:bg-mycolor duration-150"
-                  >
-                    View Code
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Gitub Clone  -->
-          <div class="flex justify-center items-center w-full my-7">
-            <div class="mr-36 w-1/2">
-              <a href="https://bestgithubclone.vercel.app/" target="_blank"
-                ><img
-                  src="/projects/githubclone.png"
-                  alt=""
-                  class="w-[450px] rounded-2xl hover:scale-110 duration-300"
-              /></a>
-            </div>
-            <div class="flex flex-col justify-center items-start w-1/2">
-              <h1 class="text-4xl py-2 font-bold">Github Clone</h1>
-              <p class="text-lg text-mutedtext">
-                Simple clone of Github using API
-              </p>
-              <div class="flex flex-row my-4">
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  HTML
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  CSS
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  JavaScript
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  Github API
-                </div>
-              </div>
-              <div>
-                <a href="https://bestgithubclone.vercel.app/" target="_blank"
-                  ><button
-                    class="w-40 rounded-lg p-3 my-2 border-2 text-black font-bold bg-mycolor border-mycolor hover:text-mycolor hover:bg-transparent duration-150"
-                  >
-                    Visit Live
-                  </button></a
-                >
-                <a
-                  href="https://github.com/Saksham-w/Github-clone"
-                  target="_blank"
-                  ><button
-                    class="w-40 rounded-lg p-3 my-2 border-2 text-mycolor font-bold bg-transparent border-mycolor hover:text-black hover:bg-mycolor duration-150"
-                  >
-                    View Code
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Tech threads  -->
-          <div class="flex justify-center items-center w-full my-7">
-            <div class="mr-36 w-1/2">
-              <a href="https://techthreads.vercel.app/" target="_blank"
-                ><img
-                  src="/projects/techthreads.png"
-                  alt=""
-                  class="w-[450px] rounded-2xl hover:scale-110 duration-300"
-              /></a>
-            </div>
-            <div class="flex flex-col justify-center items-start w-1/2">
-              <h1 class="text-4xl py-2 font-bold">Tech Threads</h1>
-              <p class="text-lg text-mutedtext">
-                Tech news generating website using API
-              </p>
-              <div class="flex flex-row my-4">
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  HTML
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  CSS
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  JavaScript
-                </div>
-                <div
-                  class="bg-gray-700 rounded-lg mr-3 px-4 py-2 text-gray-400"
-                >
-                  HackerNews API
-                </div>
-              </div>
-              <div>
-                <a href="https://techthreads.vercel.app/" target="_blank">
-                  <button
-                    class="w-40 rounded-lg p-3 my-2 border-2 text-black font-bold bg-mycolor border-mycolor hover:text-mycolor hover:bg-transparent duration-150"
-                  >
-                    Visit Live
-                  </button></a
-                >
-                <a
-                  href="https://github.com/Saksham-w/Tech-Threads"
-                  target="_blank"
-                  ><button
-                    class="w-40 rounded-lg p-3 my-2 border-2 text-mycolor font-bold bg-transparent border-mycolor hover:text-black hover:bg-mycolor duration-150"
-                  >
-                    View Code
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+          
       </div>
       <!-- Page4  -->
       <div
@@ -437,11 +331,11 @@
       <!-- Footer  -->
       <footer
         id="contact"
-        class="max-w-[1240px] mx-auto min-h-[50vh] flex justify-center items-center"
+        class="max-w-[1240px] mx-auto min-h-[50vh] flex flex-col-reverse lg:flex-row justify-center items-center"
       >
         <div
           id="footInfo"
-          class="h-full w-1/2 flex flex-col items-start justify-start"
+          class="h-full w-full px-10 lg:w-1/2 lg:px-0 flex flex-col items-start justify-start"
         >
           <h1 class="text-4xl font-bold">Hey there!</h1>
           <p class="text-xl my-3 text-mutedtext">
@@ -492,7 +386,7 @@
         </div>
         <div
           id="form"
-          class="h-full w-1/2 flex flex-col items-center justify-center px-20"
+          class="h-full w-full lg:w-1/2 flex flex-col items-center justify-center px-20"
         >
           <h1 class="w-full text-4xl font-bold">Lets Connect</h1>
           <form
