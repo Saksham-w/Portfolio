@@ -41,7 +41,7 @@ projectsArray.map(function (project) {
     <div
       class="lg:mr-36 w-full lg:w-1/2 flex items-center justify-center"
     >
-      <a href="https://randomcatsfacts.vercel.app/" target="_blank">
+      <a href='${project.url}' target="_blank">
         <img
           src='${project.image}'
           alt=""
