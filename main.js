@@ -6,6 +6,14 @@ const allProjects = document.getElementById("allProjects");
 
 const projectsArray = [
   {
+    image: "/projects/countrypedia.png",
+    title: "Country Pedia",
+    description: "Country information displaying website",
+    techUsed: ["HTML", "CSS", "JS", "React", "API"],
+    url: "https://thecountrypedia.vercel.app/",
+    githubUrl: "hhttps://github.com/Saksham-w/CountryPedia",
+  },
+  {
     image: "/projects/catfacts.png",
     title: "Cat Facts",
     description: "Cats fact generating website",
@@ -36,7 +44,7 @@ const projectsArray = [
 projectsArray.map(function (project) {
   const projectDiv = document.createElement("div");
   projectDiv.innerHTML = `<div
-    class="flex flex-col lg:flex-row justify-center items-center w-full my-7"
+    class="flex flex-col lg:flex-row justify-center items-center w-[900px] my-7"
   >
     <div
       class="lg:mr-36 w-full lg:w-1/2 flex items-center justify-center"
@@ -114,3 +122,4 @@ menuList.map(function (element) {
 
   });
 });
+
