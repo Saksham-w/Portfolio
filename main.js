@@ -19,7 +19,7 @@ const projectsArray = [
     description: "Country information displaying website",
     techUsed: ["HTML", "CSS", "JS", "React", "API"],
     url: "https://thecountrypedia.vercel.app/",
-    githubUrl: "hhttps://github.com/Saksham-w/CountryPedia",
+    githubUrl: "https://github.com/Saksham-w/CountryPedia",
   },
   {
     image: "/projects/catfacts.png",
