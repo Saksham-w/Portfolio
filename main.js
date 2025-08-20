@@ -6,6 +6,14 @@ const allProjects = document.getElementById("allProjects");
 
 const projectsArray = [
   {
+    image: "/projects/chatapp.png",
+    title: "React Firebase Chat",
+    description: "Real-time chat application",
+    techUsed: ["React", "Firebase", "CSS", "Zustand"],
+    url: "https://reactchat-c34ca.web.app/",
+    githubUrl: "https://github.com/Saksham-w/react-firebase-chat",
+  },
+  {
     image: "/projects/countrypedia.png",
     title: "Country Pedia",
     description: "Country information displaying website",
