@@ -42,7 +42,7 @@ const projectsArray = [
     title: "Code Nest",
     description: "An Application To View Repositories Using API",
     techUsed: ["HTML", "CSS", "JS", "Github API"],
-    url: "https://bestgithubclone.vercel.app/",
+    url: "https://bestcodenest.vercel.app/",
     githubUrl: "https://github.com/Saksham-w/Code-Nest",
   },
   {
