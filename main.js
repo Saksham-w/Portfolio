@@ -43,7 +43,7 @@ const projectsArray = [
     description: "An Application To View Repositories Using API",
     techUsed: ["HTML", "CSS", "JS", "Github API"],
     url: "https://bestgithubclone.vercel.app/",
-    githubUrl: "https://github.com/Saksham-w/Github-clone",
+    githubUrl: "https://github.com/Saksham-w/Code-Nest",
   },
   {
     image: "/projects/techthreads.png",
